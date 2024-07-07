@@ -1,0 +1,132 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{% static 'css/remixicon.css' %}">
+  <link rel="stylesheet" href="{% static 'style1.css' %}">
+  <link rel="stylesheet" href="{% static 'transition.css' %}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <title>Grant Morallos - Game Developer Portfolio</title>
+  <style>
+    body {
+      color: white;
+    }
+  </style>
+</head>
+
+<body style="background-image: url('{% static 'background5.jpg' %}');">
+  <header class="header">
+    <a href="home.html" class="ants">Ants</a>
+  </header>
+
+  <section class="section" id="section-home">
+    <div class="section__container">
+      <div class="content">
+        <h1 class="subtitle">Welcome</h1>
+        <h2 class="title">
+          I'm <span>Grant Morallos<br>a</span> Game Developer
+        </h2>
+        <p class="description">
+          Welcome to my Game Developer Portfolio! I'm Grant, a passionate game developer dedicated to creating immersive and engaging gaming experiences.
+        </p>
+      </div>
+    </div>
+  </section>
+    
+  <section class="section" id="section-about">
+    <h1 class="title">About Me</h1>
+    <div class="about-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h3>Experience</h3>
+          <p>I am a newbie<br>Game Developer</p>
+        </div>
+      </div>
+    </div>
+    <div class="text-container">
+      <p>With a passion for innovation, I am a dedicated professional in the field of game development. Armed with a comprehensive skill set that includes programming languages such as C++, Unity, and Unreal Engine, I thrive on creating immersive and engaging gaming experiences. My experience extends to managing comprehensive game development projects, from conceptualization to execution, ensuring high-quality and impactful gameplay. I thrive on challenging projects that allow me to blend creativity with technical expertise.</p>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <p class="section__text__p1">Explore my</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Game Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="{% static 'unity.png' %}" alt="Unity icon" class="icon" />
+              <div>
+                <h3>Unity</h3>
+                <p>As a game developer with a passion for creating immersive experiences, I have dedicated significant time to mastering Unity. My journey began with small projects, where I learned the basics of the engine, including asset management, scripting in C#, and understanding the physics system.</p>
+              </div>
+            </article>
+            <article>
+              <img src="{% static 'unreal.png' %}" alt="Unreal Engine icon" class="icon" />
+              <div>
+                <h3>Unreal Engine</h3>
+                <p>My journey with Unreal Engine has been marked by a drive to push the boundaries of visual fidelity and interactive storytelling in game development.</p>
+              </div>
+            </article>
+            <article>
+              <img src="{% static 'c++.png' %}" alt="C++ icon" class="icon" />
+              <div>
+                <h3>C++</h3>
+                <p>My experience with C++ has been integral to my growth as a game developer, enabling me to build efficient and high-performance games.</p>
+              </div>
+            </article>
+            <article>
+              <img src="{% static 'python.png' %}" alt="Python icon" class="icon" />
+              <div>
+                <h3>Python</h3>
+                <p>As a game developer, Python has been a valuable tool for various aspects of game development, from scripting to tool creation.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="section-portfolio"> 
+    <p class="section__text__p1">My Work</p>
+    <h1 class="title">Portfolio</h1>
+    <div class="portfolio-details-container">
+      <div class="portfolio-item">
+        <img src="{% static 'bg.png' %}" alt="Project 1" class="portfolio-image" />
+        <div class="portfolio-content">
+          <h3>Ants</h3>
+          <p>A young and hopeful queen ant is rapidly rising to prominence, infusing the ant colony with newfound vitality and aspiration. To safeguard her position, the industrious worker ants toil day and night: some transport resources while others build robust nests, all contributing to a prosperous scene.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="section-contact">
+    <h1 class="title">Contacts</h1>
+    <div class="cards">
+      <div class="card">
+        <ion-icon name="call-outline"></ion-icon>
+        <h3>Phone</h3>
+        <p>09075154615</p>
+      </div>
+      <div class="card">
+        <ion-icon name="mail-outline"></ion-icon>
+        <h3>Email</h3>
+        <p><a href="mailto:grant.morallos09@gmail.com" style="color: blue;">grant.morallos09@gmail.com</a></p>
+      </div>
+    </div>
+  </section>
+  
+  <script type="module" src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule="" src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.js"></script>
+  <script src="{% static 'script.js' %}"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
